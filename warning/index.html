@@ -85,18 +85,11 @@
 </div>
 
 <script>
-  function goBack() {
-    window.location.href = "../";
-  }
-
   function checkFix() {
     if (window.innerWidth <= 1200) {
-      window.location.href = "../";
+      window.location.replace("../");
     }
   }
 
   window.addEventListener("resize", checkFix);
 </script>
-
-</body>
-</html>
